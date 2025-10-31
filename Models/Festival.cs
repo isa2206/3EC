@@ -10,5 +10,7 @@ namespace TecWebFest.Api.Entities
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         //TODO relacion con stage
+        public ICollection<Stage> Stages { get; set; } = new List<Stage>();
+
     }
 }
