@@ -25,6 +25,8 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
 builder.Services.AddScoped<IFestivalRepository, FestivalRepository>();
 builder.Services.AddScoped<IArtistRepository, ArtistRepository>();
 builder.Services.AddScoped<IPerformanceRepository, PerformanceRepository>();
+builder.Services.AddScoped<IStageRepository, StageRepository>();
+
 
 // Inyección de servicios
 builder.Services.AddScoped<IFestivalService, FestivalService>();
